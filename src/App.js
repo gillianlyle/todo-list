@@ -15,7 +15,7 @@ const App = () => {
 
       <div className="container">
 
-        <h1> To do list </h1>
+        <h1>To do list </h1>
 
         <div className="input-group mb-3">
           <input type="text" className="form-control" value={value} onChange={handleChange} />
@@ -25,7 +25,14 @@ const App = () => {
         </div>
 
         <hr />
-
+        <ul>
+          {toDos.map((toDo, index) => (
+              <li key={index}>{toDo}</li>
+            )
+          )
+          }
+        </ul>
+ 
       </div>
   );
 }
