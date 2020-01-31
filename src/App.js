@@ -9,6 +9,15 @@ const App = () => {
 
     const handleChange = event => {setValue(event.target.value)}
     const handleSubmit = event => {setToDos([...toDos, value])} // create array and add new value
+    const handleDelete = index => { 
+    
+      let newToDos = [...toDos]; // copy of toDos array
+      newToDos.splice(index, 1) // remove *index* number from array
+      setToDos(newToDos)
+      console.log("handle delete: ", newToDos)
+
+    }
+
     console.log("toDos value: ", toDos)
 
     return (
@@ -27,7 +36,7 @@ const App = () => {
         <hr />
         <ul>
           {toDos.map((toDo, index) => (
-              <li key={index}>{toDo}</li>
+              <li key={index}>{toDo} <button onClick={() => handleDelete(index)}>Delete</button></li>
             )
           )
           }
