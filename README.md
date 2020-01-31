@@ -1,3 +1,12 @@
+This mini project was created to
+
+1. create a simple to-do list, that
+2. allows the user can add an item
+3. allows the user to delete an item
+
+
+----------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
