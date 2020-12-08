@@ -1,7 +1,7 @@
 This mini project was created to
 
 1. create a simple to-do list, that
-2. allows the user can add an item
+2. allows the user to add an item
 3. allows the user to delete an item
 
 
